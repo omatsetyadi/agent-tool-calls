@@ -1,2 +1,8 @@
 packages:
   - packages/*
+
+# Dependencies allowed to run install/build scripts (pnpm 11 blocks these by
+# default; this is the v11 `allowBuilds` map that replaced onlyBuiltDependencies).
+# esbuild powers vitest. Matches the convention in the timmy repo.
+allowBuilds:
+  esbuild: true
