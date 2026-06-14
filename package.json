@@ -11,10 +11,18 @@
   "scripts": {
     "build": "turbo run build",
     "typecheck": "turbo run typecheck",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,json,md,yaml,yml}": [
+      "prettier --write"
+    ]
   },
   "devDependencies": {
     "@types/node": "^24.0.0",
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
     "prettier": "^3.3.3",
     "turbo": "^2.9.18",
     "typescript": "^6.0.0"
