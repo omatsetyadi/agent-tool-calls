@@ -1,8 +1,21 @@
 {
   "name": "@agent-tool-calls/machine",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Cross-platform OS operations — open apps, play media, list/delete files, manage processes",
+  "keywords": [
+    "os",
+    "automation",
+    "agent",
+    "tools",
+    "macos"
+  ],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omatsetyadi/agent-tool-calls.git",
+    "directory": "packages/machine"
+  },
+  "homepage": "https://github.com/omatsetyadi/agent-tool-calls#readme",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
