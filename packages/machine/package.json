@@ -1,0 +1,17 @@
+{
+  "name": "@agent-tool-calls/machine",
+  "version": "0.0.0",
+  "description": "Cross-platform OS operations — open apps, play media, list/delete files, manage processes",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  }
+}
