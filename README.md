@@ -22,8 +22,11 @@ Simple, stateless, general utility → here. Complex/stateful/needs-infrastructu
 ## Develop
 
 ```bash
-npm install
-npm run build
+corepack enable pnpm # activate the pinned pnpm (first time only)
+pnpm install
+pnpm build           # turbo, cached
 ```
+
+Tooling: **pnpm** workspaces + **Turborepo**.
 
 Requires Node.js 24+ (current LTS — see `.nvmrc`; run `nvm use`).
