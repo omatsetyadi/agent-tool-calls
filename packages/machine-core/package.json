@@ -1,0 +1,36 @@
+{
+  "name": "@agent-tool-calls/machine-core",
+  "version": "0.1.0",
+  "description": "Machine adapter contract — capability types, Runner, Platform, and shared cross-platform OS helpers. No platform-specific code.",
+  "keywords": [
+    "os",
+    "automation",
+    "agent",
+    "tools"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omatsetyadi/agent-tool-calls.git",
+    "directory": "packages/machine-core"
+  },
+  "homepage": "https://github.com/omatsetyadi/agent-tool-calls#readme",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^6.0.0",
+    "vitest": "^3.2.6"
+  }
+}
